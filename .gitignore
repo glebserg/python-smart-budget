@@ -1,0 +1,4 @@
+.env
+.idea
+./sql_app.db
+poetry.lock
