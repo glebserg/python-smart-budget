@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "smart-budget(python)"
+version = "0.1.0"
+description = ""
+authors = ["glb <glebserg@mail.ru>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+fastapi = "^0.115.12"
+uvicorn = "^0.34.0"
+alembic = "^1.15.2"
+pytest = "^8.3.5"
+pydantic-settings = "^2.8.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
