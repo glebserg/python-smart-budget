@@ -5,6 +5,7 @@ description = ""
 authors = ["glb <glebserg@mail.ru>"]
 readme = "README.md"
 
+
 [tool.poetry.dependencies]
 python = "^3.12"
 fastapi = "^0.115.12"
@@ -12,8 +13,18 @@ uvicorn = "^0.34.0"
 alembic = "^1.15.2"
 pytest = "^8.3.5"
 pydantic-settings = "^2.8.1"
+psycopg2 = "^2.9.10"
+authx = "^1.4.2"
+pydantic = {version = "^2.11.2", extras = ["email"]}
+bcrypt = "4.0.1"
+passlib = "^1.7.4"
+sqlalchemy-utils = "^0.41.2"
 
 
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
+
+[tool.pytest.ini_options]
+pythonpath = [".","./app"]
+addopts = "-W ignore::DeprecationWarning"
